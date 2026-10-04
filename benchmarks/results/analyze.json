@@ -1,0 +1,85 @@
+{
+  "config": {
+    "base_url": "http://127.0.0.1:8000",
+    "concurrency": 20,
+    "concurrent_requests": 500,
+    "execute": false,
+    "structural_templates": 8
+  },
+  "cache_miss_latency_ms (cold phase)": {
+    "count": 8,
+    "avg_ms": 3.227,
+    "p50_ms": 3.16,
+    "p95_ms": 3.543,
+    "p99_ms": 3.569,
+    "max_ms": 3.576
+  },
+  "cache_hit_latency_ms (warm phase)": {
+    "count": 80,
+    "avg_ms": 1.726,
+    "p50_ms": 1.562,
+    "p95_ms": 2.789,
+    "p99_ms": 3.906,
+    "max_ms": 6.82
+  },
+  "concurrent_request_latency_ms": {
+    "count": 500,
+    "avg_ms": 67.719,
+    "p50_ms": 64.797,
+    "p95_ms": 99.894,
+    "p99_ms": 120.944,
+    "max_ms": 156.066
+  },
+  "query_execution_time_ms": {
+    "count": 0
+  },
+  "concurrent_wall_time_s": 1.741,
+  "throughput_rps": 287.2,
+  "successful_concurrent_requests": 500,
+  "cold_cache_hits": 0,
+  "cold_cache_misses": 8,
+  "warm_cache_hits": 80,
+  "server_metrics": {
+    "requests_total": 588,
+    "allowed_total": 588,
+    "blocked_total": 0,
+    "executed_total": 0,
+    "request_latency": {
+      "count": 588,
+      "avg_ms": 7.71,
+      "p50_ms": 6.07,
+      "p95_ms": 19.421,
+      "max_ms": 75.625
+    },
+    "cache_hit_latency": {
+      "count": 580,
+      "avg_ms": 7.772,
+      "p50_ms": 6.149,
+      "p95_ms": 19.507,
+      "max_ms": 75.625
+    },
+    "cache_miss_latency": {
+      "count": 8,
+      "avg_ms": 3.227,
+      "p50_ms": 3.16,
+      "p95_ms": 3.543,
+      "max_ms": 3.576
+    },
+    "query_execution_time": {
+      "count": 0,
+      "avg_ms": null,
+      "p50_ms": null,
+      "p95_ms": null,
+      "max_ms": null
+    },
+    "cache": {
+      "hits": 580,
+      "misses": 8,
+      "sets": 8,
+      "advisory_computations_avoided": 580,
+      "llm_calls_avoided": 0,
+      "total_lookups": 588,
+      "hit_rate": 0.9864
+    }
+  }
+}

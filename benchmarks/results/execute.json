@@ -1,0 +1,90 @@
+{
+  "config": {
+    "base_url": "http://127.0.0.1:8000",
+    "concurrency": 20,
+    "concurrent_requests": 300,
+    "execute": true,
+    "structural_templates": 8
+  },
+  "cache_miss_latency_ms (cold phase)": {
+    "count": 8,
+    "avg_ms": 17.174,
+    "p50_ms": 11.847,
+    "p95_ms": 41.565,
+    "p99_ms": 49.878,
+    "max_ms": 51.956
+  },
+  "cache_hit_latency_ms (warm phase)": {
+    "count": 80,
+    "avg_ms": 11.122,
+    "p50_ms": 9.157,
+    "p95_ms": 26.921,
+    "p99_ms": 34.437,
+    "max_ms": 44.958
+  },
+  "concurrent_request_latency_ms": {
+    "count": 300,
+    "avg_ms": 234.657,
+    "p50_ms": 229.006,
+    "p95_ms": 329.63,
+    "p99_ms": 401.867,
+    "max_ms": 548.933
+  },
+  "query_execution_time_ms": {
+    "count": 388,
+    "avg_ms": 72.836,
+    "p50_ms": 65.823,
+    "p95_ms": 178.267,
+    "p99_ms": 243.98,
+    "max_ms": 391.397
+  },
+  "concurrent_wall_time_s": 3.6847,
+  "throughput_rps": 81.42,
+  "successful_concurrent_requests": 300,
+  "cold_cache_hits": 0,
+  "cold_cache_misses": 8,
+  "warm_cache_hits": 80,
+  "server_metrics": {
+    "requests_total": 388,
+    "allowed_total": 388,
+    "blocked_total": 0,
+    "executed_total": 388,
+    "request_latency": {
+      "count": 388,
+      "avg_ms": 83.729,
+      "p50_ms": 79.102,
+      "p95_ms": 186.613,
+      "max_ms": 396.825
+    },
+    "cache_hit_latency": {
+      "count": 380,
+      "avg_ms": 85.13,
+      "p50_ms": 80.046,
+      "p95_ms": 187.028,
+      "max_ms": 396.825
+    },
+    "cache_miss_latency": {
+      "count": 8,
+      "avg_ms": 17.174,
+      "p50_ms": 11.847,
+      "p95_ms": 41.565,
+      "max_ms": 51.956
+    },
+    "query_execution_time": {
+      "count": 388,
+      "avg_ms": 72.836,
+      "p50_ms": 65.823,
+      "p95_ms": 178.267,
+      "max_ms": 391.397
+    },
+    "cache": {
+      "hits": 380,
+      "misses": 8,
+      "sets": 8,
+      "advisory_computations_avoided": 380,
+      "llm_calls_avoided": 0,
+      "total_lookups": 388,
+      "hit_rate": 0.9794
+    }
+  }
+}
