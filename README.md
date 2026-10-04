@@ -177,7 +177,3 @@ The important pieces are:
 The repository includes Docker configuration and an `.env.example` file.
 
 Do not commit real API keys, passwords, production connection strings, or private data.
-
-## Interview Summary
-
-> "I built a FastAPI middleware in front of PostgreSQL. SQL is parsed with SQLGlot and checked by deterministic security rules. Redis caches analysis for normalized queries, PostgreSQL EXPLAIN is used for query-plan analysis, and an LLM can suggest optimizations. The important design decision is that the LLM is never the security authority — any generated SQL is validated again before execution."
